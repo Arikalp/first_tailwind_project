@@ -37,26 +37,31 @@ function main()
     var ch=document.getElementById('operator').value;
     if(ch=='+')
     {
+        document.getElementById('heading').innerText='Add two Numbers';
         document.getElementById('button').innerText='Add';
         addNumbers(num1,num2);
     }
     else if(ch=='-')
     {
+        document.getElementById('heading').innerText='Subtract two Numbers';
         document.getElementById('button').innerText='Subtract';
         subNum(num1,num2);
     }
     else if(ch=='*')
     {
+        document.getElementById('heading').innerText='Multiply two Numbers';
         document.getElementById('button').innerText='Multiply';
         mulNum(num1 , num2);
     }
     else if(ch=='/')
     {
+        document.getElementById('heading').innerText='Divide two Numbers';
         document.getElementById('button').innerText='Divide';
         divNum(num1,num2);
     }
     else
     {
+        document.getElementById('heading').innerText='Make sure to select correct operator';
         document.getElementById('button').innerText='Invalid Operator';
         document.getElementById('result').innerText = 'Result: Invalid Operator';
     }
